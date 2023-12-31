@@ -15,4 +15,10 @@
     border: 1px solid var(--Grey-15, #262626);
     background: var(--Grey-08, #0a0a0a);
   }
+
+  .searchInput {
+    border-radius: 8px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+  }
 }
