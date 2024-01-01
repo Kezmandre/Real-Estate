@@ -12,7 +12,7 @@ export const Footer = () => {
             Estatein
           </p>
         </div>
-        <div className=" relative w-[300px] p-1 searchInput flex justify-between items-center">
+        <div className=" relative w-[300px] p-1 mb-4 searchInput flex justify-between items-center ">
           <div className="flex justify-start items-center">
             <MdOutlineMarkEmailUnread className="text-[#999]" />
             <input
@@ -22,6 +22,30 @@ export const Footer = () => {
             />
           </div>
           <LuSend className="text-white text-2xl mr-2 cursor-pointer" />
+        </div>
+        <div className="flex flex-col" >
+            <div className="flex justify-start font-Urbanist">
+                <div className="w-1/2 border-r mr-6 ">
+                    <h3 className="text-[#999] pb-4 font-semibold">Home</h3>
+                    <ul className="text-white">
+                        <li className="pb-1">Hero Sections</li>
+                        <li className="pb-1">Features</li>
+                        <li className="pb-1">Properties</li>
+                        <li className="pb-1">Testimonials</li>
+                        <li>FAQ's</li>
+                    </ul>
+                </div>
+                <div className="w-1/2">
+                    <h3 className="text-[#999] pb-4 font-semibold">About us</h3>
+                    <ul className="text-white">
+                        <li className="pb-1">Our Story</li>
+                        <li className="pb-1">Our Works</li>
+                        <li className="pb-1">How it Works</li>
+                        <li className="pb-1">Our Team</li>
+                        <li>Our Clients</li>
+                    </ul>
+                </div>
+            </div>
         </div>
       </div>
     </div>
