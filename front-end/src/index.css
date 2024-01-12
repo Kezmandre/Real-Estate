@@ -21,4 +21,13 @@
     border: 1px solid var(--Grey-15, #262626);
     background: var(--Grey-08, #141414);
   }
+
+  .lastFooter {
+    background: var(--Grey-10, #1a1a1a);
+  }
+
+  .footerIcon {
+    border-radius: 58px;
+    background: var(--Grey-08, #141414);
+  }
 }
