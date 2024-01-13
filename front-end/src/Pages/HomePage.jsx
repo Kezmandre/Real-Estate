@@ -7,9 +7,7 @@ import { Footer } from '../Component/Footer/Footer'
 const HomePage = () => {
   return (
     <div>
-        <Advert/>
-        <Navigation/>
-        <Footer/>
+       <Home/>
     </div>
   )
 }

@@ -30,4 +30,33 @@
     border-radius: 58px;
     background: var(--Grey-08, #141414);
   }
+
+  .Bg {
+    background: var(--Grey-08, #141414);
+  }
+
+  .homeBg {
+    background: linear-gradient(
+      238deg,
+      #2a213f 8.76%,
+      rgba(25, 25, 25, 0) 50.09%
+    );
+    /* lightgray 50% / cover no-repeat; */
+  }
+
+  .learnMore {
+    border-radius: 8px;
+    border: 1px solid var(--Grey-15, #262626);
+  }
+
+  .Browse {
+    border-radius: 8px;
+    background: var(--Purple-60, #703bf7);
+  }
+
+  .homeNumber {
+    border-radius: 10px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-10, #1a1a1a);
+  }
 }

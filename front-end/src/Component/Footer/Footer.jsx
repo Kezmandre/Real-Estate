@@ -86,7 +86,7 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col-reverse justify-center md:flex-row md:justify-between items-center font-Urbanist text-white p-6 lastFooter">
+      <div className="flex flex-col-reverse justify-center md:flex-row md:justify-between items-center font-Urbanist text-white p-4 lastFooter">
         <div className=" flex flex-col justify-center items-center mb-6 md:mb-1 md:flex-row gap-4">
           <p>@{date.getFullYear()} Estatein All rights Reserved.</p>
           <p>Terms & Conditions</p>
