@@ -22,23 +22,23 @@ const Home = () => {
               our listings to find the home that matches your dreams.
             </p>
             <div className="flex flex-col justify-center md:flex-row md:justify-start  gap-2 my-6 items-center cursor-pointer text-white">
-              <div className="w-full md:w-[200px] p-3 learnMore text-center">
+              <div className="w-full md:w-[200px] p-3 learnMore text-center hover:Browse">
                 Learn More
               </div>
-              <div className="w-full md:w-[200px] p-3 Browse text-center">
+              <div className="w-full md:w-[200px] p-3 Browse text-center hover:bg-black">
                 Browse properties
               </div>
             </div>
             <div className="flex flex-wrap md:flex-nowrap gap-2 mt-4 mb-4 ">
-              <div className="w-[49%] md:w-[300px] p-2 h-[150px] homeNumber text-center md:text-start">
+              <div className="w-[49%] md:w-[300px] p-2 h-[130px] homeNumber text-center md:text-start">
                 <p className="text-white font-semibold pt-8 text-2xl">200+</p>
                 <p className="text-[#999]">Happy Customers</p>
               </div>
-              <div className="w-[49%] md:w-[300px] p-2 h-[150px] homeNumber text-center md:text-start">
+              <div className="w-[49%] md:w-[300px] p-2 h-[130px] homeNumber text-center md:text-start">
                 <p className="text-white font-semibold text-2xl pt-8">10K +</p>
                 <p className="text-[#999]">Properties For Clients</p>
               </div>
-              <div className="w-full md:w-[300px] p-2 h-[150px] mb-4 md:mb-0 homeNumber text-center md:text-start">
+              <div className="w-full md:w-[300px] p-2 h-[130px] mb-4 md:mb-0 homeNumber text-center md:text-start">
                 <p className="text-white font-semibold text-2xl pt-8">16+</p>
                 <p className="text-[#999]">Years of Experience</p>
               </div>

@@ -8,7 +8,7 @@ import {BsTwitterX} from "react-icons/bs"
 export const Footer = () => {
   const date = new Date();
   return (
-    <div className="p-0 m-0 bg-[#141414]">
+    <div className="pt-12 m-0 bg-[#141414]">
       <div className="w-[95%] p-8 flex flex-col md:gap-2 md:flex-row md:justify-between">
         <div className="">
           <div className="flex items-center justify-start gap-1 pb-4">
