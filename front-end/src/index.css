@@ -39,7 +39,7 @@
     background: linear-gradient(
       238deg,
       #2a213f 8.76%,
-      rgba(25, 25, 25, 0) 50.09%
+      rgba(168, 153, 153, 0) 50.09%
     );
     /* lightgray 50% / cover no-repeat; */
   }
@@ -55,6 +55,18 @@
   }
 
   .homeNumber {
+    border-radius: 10px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-10, #1a1a1a);
+  }
+
+  .prop_ppt {
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+    box-shadow: 0px 0px 0px 6px #191919;
+  }
+
+  .inner_ppt {
     border-radius: 10px;
     border: 1px solid var(--Grey-15, #262626);
     background: var(--Grey-10, #1a1a1a);
