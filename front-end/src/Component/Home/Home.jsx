@@ -5,7 +5,7 @@ import Sub_Container from "../../assets/Images/Sub_Container.png";
 import { propertyData } from "../../assets/Data/Data";
 const Home = () => {
   return (
-    <div>
+    <div className="Bg">
       <div className="p-0 m-0 border-box Bg">
         <div className="relative w-[95%] mx-auto flex flex-col justify-center md:flex-row-reverse pb-8">
           <div className="w-sm md:w-1/2 h-full homeBg mb-6">
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="prop_ppt w-full flex justify-center flex-wrap md:flex-nowrap gap-2">
+      <div className="prop_ppt w-[95%] mx-auto md:w-full flex justify-center flex-wrap md:flex-nowrap gap-2">
         {propertyData?.map((data) => {
           return (
             <div

@@ -71,4 +71,25 @@
     border: 1px solid var(--Grey-15, #262626);
     background: var(--Grey-10, #1a1a1a);
   }
+  .view_btn {
+    border-radius: 8px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-10, #1a1a1a);
+  }
+
+  .ppt_style {
+    border-radius: 12px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+  }
+
+  .ppt_list {
+    border-radius: 28px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-10, #1a1a1a);
+  }
+  .nextIcon {
+    border-radius: 69px;
+    border: 1px solid var(--Grey-15, #262626);
+  }
 }

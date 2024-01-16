@@ -1,13 +1,12 @@
 import React from 'react'
 import Home from '../Component/Home/Home'
-import Advert from '../Component/Advert/Advert'
-import Navigation from '../Component/Navigation/Navigation'
-import { Footer } from '../Component/Footer/Footer'
+import Property from '../Component/Property/Property'
 
 const HomePage = () => {
   return (
     <div>
        <Home/>
+       <Property/>
     </div>
   )
 }
