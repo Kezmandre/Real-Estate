@@ -1,9 +1,9 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
 import { MdBed, MdHouseSiding } from "react-icons/md";
-import { FaBath ,FaArrowRight, FaArrowLeft} from "react-icons/fa";
+import { FaBath, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { buildingData } from "../../assets/Data/Data";
-import House_1 from "../../assets/Images/house_img_1.png";
+
 const Property = () => {
   return (
     <div className="m-0 pt-10 Bg">
@@ -75,13 +75,24 @@ const Property = () => {
         </div>
         <hr className="pb-2" />
         <div className="flex justify-between items-center">
-          <span className="text-white flex gap-1">
+        <div className="view_btn flex lg:hidden text-sm h-[40px] w-[150px] justify-center items-center p-2 text-white cursor-pointer">
+            View All Properties
+          </div>
+          <span className="text-white hidden lg:flex gap-1">
             {" "}
             01 <p className="text-[#999]"> of 10 </p>
           </span>
-          <div className="flex gap-2 cursor-pointer">
-            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center"><FaArrowLeft/></div>
-            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center"><FaArrowRight/></div>
+          <div className="flex justify-center items-center gap-2 cursor-pointer">
+            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center">
+              <FaArrowLeft />
+            </div>
+            <span className="text-white flex lg:hidden gap-1">
+              {" "}
+              01 <p className="text-[#999]"> of 10 </p>
+            </span>
+            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center">
+              <FaArrowRight />
+            </div>
           </div>
         </div>
       </div>

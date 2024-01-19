@@ -43,7 +43,7 @@ const Home = () => {
                 <p className="text-[#999]">Years of Experience</p>
               </div>
             </div>
-            <div className="absolute top-20 right[50%] left-[50%] w-[80px] h-[80px] rounded-full">
+            <div className="animate-spin absolute top-20 right[50%] left-[50%] w-[80px] h-[80px] rounded-full">
               <img
                 src={Sub_Container}
                 alt=""

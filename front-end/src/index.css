@@ -92,4 +92,10 @@
     border-radius: 69px;
     border: 1px solid var(--Grey-15, #262626);
   }
+
+  .star {
+    border-radius: 100px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-10, #1a1a1a);
+  }
 }
