@@ -1,6 +1,7 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
+import { TestimonialData } from "../../assets/Data/Data";
 const Testimonials = () => {
   return (
     <div className="m-0 pt-8 Bg font-Urbanist">
@@ -23,8 +24,9 @@ const Testimonials = () => {
             View All Testimonials
           </div>
         </div>
-        <div className="flex justify-center items-center gap-4 mt-2">
-          <div className="w-[400px] h-[300px] ppt_style">
+        <div className="flex justify-center items-center gap-4 mt-2 pb-6">
+            {TestimonialData?.map((item)=>(
+                <div key={item.id} className="w-[400px] h-[310px] ppt_style">
             <div className="flex m-4 gap-2">
               <div className=" flex justify-center items-center w-[30px] h-[30px] star">
                 <FaStar className="text-[#FFE500] text-lg" />
@@ -33,19 +35,34 @@ const Testimonials = () => {
                 <FaStar className="text-[#FFE500] text-lg" />
               </div>
               <div className=" flex justify-center items-center w-[30px] h-[30px] star">
-                        <FaStar className="text-[#FFE500] text-lg"/>
-                    </div>
-                    <div className=" flex justify-center items-center w-[30px] h-[30px] star">
-                        <FaStar className="text-[#FFE500] text-lg"/>
-                    </div>
-                    <div className=" flex justify-center items-center w-[30px] h-[30px] star">
-                        <FaStar className="text-[#FFE500] text-lg"/>
-                    </div>
+                <FaStar className="text-[#FFE500] text-lg" />
+              </div>
+              <div className=" flex justify-center items-center w-[30px] h-[30px] star">
+                <FaStar className="text-[#FFE500] text-lg" />
+              </div>
+              <div className=" flex justify-center items-center w-[30px] h-[30px] star">
+                <FaStar className="text-[#FFE500] text-lg" />
+              </div>
+            </div>
+            <h2 className="px-4 py-2 text-white text-xl font-semibold">
+              {item.title}
+            </h2>
+            <p className="px-4 py-2 text-md font-medium text-white">
+             {item.desc}
+            </p>
+            <div className=" flex justify-start items-center m-4  gap-2">
+              <div className="w-[60px] h-[60px] rounded-full">
+                <img src={item.img_path} alt="" className="w-full h-full bg-cover" />
+              </div>
+              <span className="text-white">
+                <p className="text-lg font-medium">{item.name}</p>
+                <p className="text-[#999999]">{item.country}</p>
+              </span>
             </div>
           </div>
-          <div className="w-[400px] h-[300px] ppt_style"></div>
-          <div className="w-[400px] h-[300px] ppt_style"></div>
+            ))}
         </div>
+        <hr className="pb-2" />
       </div>
     </div>
   );
