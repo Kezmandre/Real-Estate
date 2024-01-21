@@ -1,6 +1,6 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
-import { FaStar } from "react-icons/fa";
+import { FaStar,FaArrowLeft,FaArrowRight  } from "react-icons/fa";
 import { TestimonialData } from "../../assets/Data/Data";
 const Testimonials = () => {
   return (
@@ -24,7 +24,7 @@ const Testimonials = () => {
             View All Testimonials
           </div>
         </div>
-        <div className="flex justify-center items-center gap-4 mt-2 pb-6">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-2 pb-6">
             {TestimonialData?.map((item)=>(
                 <div key={item.id} className="w-[400px] h-[310px] ppt_style">
             <div className="flex m-4 gap-2">
@@ -63,6 +63,27 @@ const Testimonials = () => {
             ))}
         </div>
         <hr className="pb-2" />
+        <div className="flex justify-between items-center">
+        <div className="view_btn flex lg:hidden text-sm h-[40px] w-[150px] justify-center items-center p-2 text-white cursor-pointer">
+            View All Properties
+          </div>
+          <span className="text-white hidden lg:flex gap-1">
+            {" "}
+            01 <p className="text-[#999]"> of 10 </p>
+          </span>
+          <div className="flex justify-center items-center gap-2 cursor-pointer">
+            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center">
+              <FaArrowLeft />
+            </div>
+            <span className="text-white flex lg:hidden gap-1">
+              {" "}
+              01 <p className="text-[#999]"> of 10 </p>
+            </span>
+            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center">
+              <FaArrowRight />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
