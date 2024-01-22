@@ -3,6 +3,7 @@ import Hero_2 from "../../assets/Images/Hero_2.png";
 import { PiArrowUpRightBold } from "react-icons/pi";
 import Sub_Container from "../../assets/Images/Sub_Container.png";
 import { propertyData } from "../../assets/Data/Data";
+import Card from "../Card/Card";
 const Home = () => {
   return (
     <div className="Bg">
@@ -29,20 +30,7 @@ const Home = () => {
                 Browse properties
               </div>
             </div>
-            <div className="flex flex-wrap md:flex-nowrap gap-2 mt-4 mb-4 ">
-              <div className="w-[49%] md:w-[300px] p-2 h-[130px] homeNumber text-center md:text-start">
-                <p className="text-white font-semibold pt-8 text-2xl">200+</p>
-                <p className="text-[#999]">Happy Customers</p>
-              </div>
-              <div className="w-[49%] md:w-[300px] p-2 h-[130px] homeNumber text-center md:text-start">
-                <p className="text-white font-semibold text-2xl pt-8">10K +</p>
-                <p className="text-[#999]">Properties For Clients</p>
-              </div>
-              <div className="w-full md:w-[300px] p-2 h-[130px] mb-4 md:mb-0 homeNumber text-center md:text-start">
-                <p className="text-white font-semibold text-2xl pt-8">16+</p>
-                <p className="text-[#999]">Years of Experience</p>
-              </div>
-            </div>
+           <Card/>
             <div className="animate-spin absolute top-20 right[50%] left-[50%] w-[80px] h-[80px] rounded-full">
               <img
                 src={Sub_Container}

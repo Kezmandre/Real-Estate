@@ -28,9 +28,11 @@ const Navigation = () => {
                   key={item.id}
                   className=" p-2 hover:hoverBg cursor-pointer"
                 >
+                  <Link to={item.path}>
                   <p className="font-Urbanist text-[#fff] md:text-lg lg:text-xl font-medium">
                     {item.name}
                   </p>
+                  </Link>
                 </div>
               );
             })}
