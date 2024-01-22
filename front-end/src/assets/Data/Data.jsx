@@ -5,9 +5,9 @@ import ppt_img_4 from "../Images/ppt_img_4.png";
 import House_1 from "../Images/house_img_1.png";
 import House_2 from "../Images/house_img_2.png";
 import House_3 from "../Images/house_img_3.png";
-import Profile_1 from "../Images/Profile_1.png"
-import Profile_2 from "../Images/Profile_2.png"
-import Profile_3 from "../Images/Profile_3.png"
+import Profile_1 from "../Images/Profile_1.png";
+import Profile_2 from "../Images/Profile_2.png";
+import Profile_3 from "../Images/Profile_3.png";
 
 export const navInfo = [
   {
@@ -119,5 +119,25 @@ export const TestimonialData = [
     img_path: Profile_3,
     name: "John Mans",
     country: "USA, Nevada",
+  },
+];
+
+export const faqData = [
+  {
+    id: 1,
+    name: "How do I search for properties on Estatein?",
+    desc: "Learn how to use our user-friendly search tools to find properties that match your criteria.",
+  },
+
+  {
+    id: 2,
+    name: "What documents do I need to sell my property through Estatein?",
+    desc: "Find out about the necessary documentation for listing your property with us.",
+  },
+
+  {
+    id: 3,
+    name: "How can I contact an Estatein agent?",
+    desc: "Discover the different ways you can get in touch with our experienced agents.",
   },
 ];

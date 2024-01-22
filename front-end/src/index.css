@@ -98,4 +98,9 @@
     border: 1px solid var(--Grey-15, #262626);
     background: var(--Grey-10, #1a1a1a);
   }
+
+  .Border {
+    border-top: 1px solid var(--Grey-15, #262626);
+    border-bottom: 1px solid var(--Grey-15, #262626);
+  }
 }

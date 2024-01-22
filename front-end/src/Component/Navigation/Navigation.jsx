@@ -13,7 +13,7 @@ const Navigation = () => {
   };
   return (
     <>
-      <div className="sticky top-0 z-10 p-0 m-0 navBg border-b">
+      <div className="sticky top-0 z-20 p-0 m-0 navBg border-b">
         <div className="w-[95%] p-2 mx-auto flex justify-between items-center">
           <div className="flex items-center justify-start gap-1">
             <img src={Logo} alt="" className="w-[30px] md:w-[40px]" />
