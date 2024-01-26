@@ -115,4 +115,17 @@
     border: 1px solid var(--Purple-60, #703bf7);
     background: var(--Grey-08, #141414);
   }
+  .navigate {
+    border-radius: 0px 12px 12px 12px;
+    border: 1px solid #262626;
+    background: linear-gradient(
+      121deg,
+      #703bf7 -49.01%,
+      rgba(112, 59, 247, 0) 13.65%
+    );
+  }
+
+  .bod{
+    border-radius: 0px 12px 12px 12px
+  }
 }

@@ -84,7 +84,7 @@ const Navigation = () => {
           </Link>
         </div>
       ) : (
-        <div className="duration-[350ms] right-[-100%]">{""}</div>
+        <div className="duration-[350ms]  right-[-100%]">{""}</div>
       )}
     </>
   );

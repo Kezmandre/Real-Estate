@@ -141,3 +141,63 @@ export const faqData = [
     desc: "Discover the different ways you can get in touch with our experienced agents.",
   },
 ];
+
+export const AchievementData = [
+  {
+    id: 1,
+    title: "3+ Years Of Excellence",
+    desc: "With over 3 years in the industry, we've amassed a wealth of knowledge and experience.",
+  },
+  {
+    id: 2,
+    title: "Happy Clients",
+    desc: "Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.",
+  },
+  {
+    id: 3,
+    title: "Industry Recognition",
+    desc: "We've earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence.",
+  },
+];
+
+export const navigateData  = [
+  {
+    id:1,
+    num:"Step 01",
+    title:"Discover a World of Possibilities",
+    desc:"Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location, type, size, and budget."
+  },
+  {
+    id:2,
+    num:"Step 02",
+    title:"Narrowing Down Your Choices",
+    desc:"Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.",
+  },
+
+  {
+    id:3,
+    num:"Step 03",
+    title:"Personalized Guidance",
+    desc:"Have questions about a property or need more information? Our dedicated team of real estate experts is just a call or message away.",
+  },
+  {
+    id:4,
+    num:"Step 04",
+    title:"See It for Yourself",
+    desc:"Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home."
+  },
+  {
+    id:5,
+    num:"Step 05",
+    title:"Making Informed Decisions",
+    desc:"Before making an offer, our team will assist you with due diligence, including property inspections, legal checks, and market analysis. We want you to be fully informed and confident in your choice."
+  },
+
+  {
+    id:6,
+    num:"Step 06",
+    title:"Getting the Best Deal",
+    desc:"We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms. "
+
+  }
+]
