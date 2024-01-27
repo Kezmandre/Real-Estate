@@ -1,11 +1,18 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
+import { PiHandWaving } from "react-icons/pi";
+import { FaLocationArrow } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 import About_Hero from "../../assets/Images/About_hero.png";
 import Card from "../Card/Card";
 import trust from "../../assets/Images/trust.png";
 import excellence from "../../assets/Images/excellence.png";
 import client from "../../assets/Images/client.png";
-import { AchievementData, navigateData } from "../../assets/Data/Data";
+import {
+  AchievementData,
+  TeamData,
+  navigateData,
+} from "../../assets/Data/Data";
 const About = () => {
   return (
     <div className="m-0 p-0 font-Urbanist Bg">
@@ -147,18 +154,89 @@ const About = () => {
           </p>
           <div className="flex flex-col lg:flex-row justify-start items-center flex-wrap gap-4 mt-8">
             {navigateData?.map((item) => (
-              <div key={item.id} className="bod w-full lg:w-[380px] h-[250px] mb-6 border-l border-l-[#703BF7]">
+              <div
+                key={item.id}
+                className="bod w-full lg:w-[380px] h-[250px] mb-6 border-l border-l-[#703BF7]"
+              >
                 <p className=" pl-2 text-white">{item.num}</p>
                 <div className="navigate w-full h-[220px] mt-2">
                   <h4 className="text-white font-semibold text-2xl pt-6 px-4">
                     {item.title}
                   </h4>
-                  <p className="text-[#999]  p-4">
-                    {item.desc}
-                  </p>
+                  <p className="text-[#999]  p-4">{item.desc}</p>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="mt-6">
+          <div className="pt-10 pb-4">
+            <BsStars className="text-[#666666] text-xl" />
+          </div>
+          <h3 className="font-semibold text-white py-4 text-2xl">
+            Meet the Estatein Team
+          </h3>
+          <p className="text-[#999] text-lg pb-4">
+            At Estatein, our success is driven by the dedication and expertise
+            of our team. Get to know the people <br /> behind our mission to
+            make your real estate dreams a reality.
+          </p>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:flex-wrap lg:flex-nowrap">
+            {TeamData?.map((item) => (
+              <div
+                key={item.id}
+                className="Team w-full md:w-[280px] lg:w-[300px] h-[370px]"
+              >
+                <div className="relative w-[270px] h-[180px] mx-auto  mt-4 rounded-md">
+                  <img src={item.image} alt="" className="w-full h-full" />
+                  <div className="absolute w-[50px] h-[30px] flex justify-center items-center Tweet bottom-[-12px] right-[40%] left-[40%]">
+                    <BsTwitterX className="text-white" />
+                  </div>
+                </div>
+                <h3 className="text-white font-semibold text-center text-xl py-4">
+                  {item.name}
+                </h3>
+                <p className="text-center text-[#999]">{item.position}</p>
+                <div className=" Hello w-[280px] flex justify-between items-center mx-auto p-1 mt-6">
+                  <div className=" m-2 flex justify-start items-start gap-1">
+                    <p className="text-white">Say Hello</p>
+                    <PiHandWaving className="text-2xl text-yellow-600" />
+                  </div>
+                  <div className="w-[35px] h-[35px] mr-2 flex justify-center items-center rounded-full cursor-pointer bg-[#703BF7]">
+                    <FaLocationArrow className="text-white" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-6">
+          <div className="pt-10 pb-4">
+            <BsStars className="text-[#666666] text-xl" />
+          </div>
+          <h3 className="font-semibold text-white py-4 text-2xl">
+            Our Valued Clients
+          </h3>
+          <p className="text-[#999] text-lg pb-4">
+            At Estatein, we have had the privilege of working with a diverse
+            range of clients across various industries. <br />
+            Here are some of the clients we've had the pleasure of serving
+          </p>
+          <div className="flex justify-center items-center gap-12 mt-6">
+            <div className="values w-[500px] h-[300px]">
+              <div className="flex justify-between items-center">
+                <div className="m-4">
+                  <p className="text-[#999]">Since 2019</p>
+                  <h3 className="text-2xl text-white font-semibold">
+                    ABC Transport
+                  </h3>
+                </div>
+                <div className="view_btn hidden mr-2 my-4 md:flex text-sm h-[50px] w-[150px] justify-center items-center text-center p-2 text-white cursor-pointer">
+                  Visit Website
+                </div>
+              </div>
+            </div>
+            <div className="values w-[500px] h-[300px]"></div>
           </div>
         </div>
       </div>
