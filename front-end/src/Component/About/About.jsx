@@ -1,11 +1,13 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
 import { PiHandWaving } from "react-icons/pi";
-import { FaLocationArrow } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+import { FaLocationArrow, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { BsTwitterX, BsEmojiSmileFill } from "react-icons/bs";
+import { RiFlashlightFill } from "react-icons/ri";
 import About_Hero from "../../assets/Images/About_hero.png";
 import Card from "../Card/Card";
 import trust from "../../assets/Images/trust.png";
+import Menu from "../../assets/Images/menu.png";
 import excellence from "../../assets/Images/excellence.png";
 import client from "../../assets/Images/client.png";
 import {
@@ -13,6 +15,7 @@ import {
   TeamData,
   navigateData,
 } from "../../assets/Data/Data";
+import Prefooter from "../PreFooter/Prefooter";
 const About = () => {
   return (
     <div className="m-0 p-0 font-Urbanist Bg">
@@ -152,7 +155,7 @@ const About = () => {
             find and purchase your <br /> dream property with ease. Here's a
             step-by-step guide to how it all works.
           </p>
-          <div className="flex flex-col lg:flex-row justify-start items-center flex-wrap gap-4 mt-8">
+          <div className="flex flex-col lg:flex-row justify-start lg:justify-center items-center flex-wrap gap-4 mt-8">
             {navigateData?.map((item) => (
               <div
                 key={item.id}
@@ -181,13 +184,13 @@ const About = () => {
             of our team. Get to know the people <br /> behind our mission to
             make your real estate dreams a reality.
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:flex-wrap lg:flex-nowrap">
+          <div className="flex flex-col md:flex-row md:justify-center lg:justify-start items-center gap-4 md:flex-wrap lg:flex-wrap">
             {TeamData?.map((item) => (
               <div
                 key={item.id}
-                className="Team w-full md:w-[280px] lg:w-[300px] h-[370px]"
+                className="Team w-full md:w-[280px] lg:w-[280px] h-[370px]"
               >
-                <div className="relative w-[270px] h-[180px] mx-auto  mt-4 rounded-md">
+                <div className="relative w-[260px] h-[180px] mx-auto  mt-4 rounded-md">
                   <img src={item.image} alt="" className="w-full h-full" />
                   <div className="absolute w-[50px] h-[30px] flex justify-center items-center Tweet bottom-[-12px] right-[40%] left-[40%]">
                     <BsTwitterX className="text-white" />
@@ -197,7 +200,7 @@ const About = () => {
                   {item.name}
                 </h3>
                 <p className="text-center text-[#999]">{item.position}</p>
-                <div className=" Hello w-[280px] flex justify-between items-center mx-auto p-1 mt-6">
+                <div className=" Hello w-[260px] flex justify-between items-center mx-auto p-1 mt-6">
                   <div className=" m-2 flex justify-start items-start gap-1">
                     <p className="text-white">Say Hello</p>
                     <PiHandWaving className="text-2xl text-yellow-600" />
@@ -222,22 +225,116 @@ const About = () => {
             range of clients across various industries. <br />
             Here are some of the clients we've had the pleasure of serving
           </p>
-          <div className="flex justify-center items-center gap-12 mt-6">
-            <div className="values w-[500px] h-[300px]">
-              <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row  justify-center items-center gap-12 mb-6 mt-6">
+            <div className="values w-full lg:w-[500px]">
+              <div className="flex flex-col md:flex-row justify-start lg:justify-between items-start lg:items-center">
                 <div className="m-4">
                   <p className="text-[#999]">Since 2019</p>
                   <h3 className="text-2xl text-white font-semibold">
                     ABC Transport
                   </h3>
                 </div>
-                <div className="view_btn hidden mr-2 my-4 md:flex text-sm h-[50px] w-[150px] justify-center items-center text-center p-2 text-white cursor-pointer">
+                <div className="view_btn text-lg lg:text-sm h-[50px] w-[95%] mx-auto md:mx-2 my-2 md:w-[150px] flex justify-center items-center  p-2 text-white cursor-pointer">
                   Visit Website
                 </div>
               </div>
+              <div className=" m-4 flex justify-between items-center">
+                <div>
+                  <div className="flex justify-start items-center gap-1">
+                    <img src={Menu} alt="" />
+                    <p className="text-[#999]">Domain</p>
+                  </div>
+                  <p className="text-white text-lg font-semibold">
+                    Commercial Real Estate
+                  </p>
+                </div>
+                <div className="border-l border-[#999] p-2">
+                  <div className="flex justify-start items-center gap-1">
+                    <RiFlashlightFill className="text-[#999]" />
+                    <p className="text-[#999]">Category</p>
+                  </div>
+                  <p className="text-white text-lg font-semibold">
+                    Luxury Home Development
+                  </p>
+                </div>
+              </div>
+              <div className="Team w-5/6 lg:w-[450px] mx-auto mb-4">
+                <div className=" m-4 flex justify-start items-center gap-1">
+                  <p className="text-[#999]">What They Said</p>
+                  <BsEmojiSmileFill className="text-yellow-600" />
+                </div>
+                <p className="text-white py-4 px-4">
+                  Estatein's expertise in finding the perfect office space for
+                  our expanding operations was invaluable. They truly understand
+                  our business needs.
+                </p>
+              </div>
             </div>
-            <div className="values w-[500px] h-[300px]"></div>
+            <div className="values w-full lg:w-[500px]">
+              <div className="flex flex-col md:flex-row justify-start lg:justify-between items-start lg:items-center">
+                <div className="m-4">
+                  <p className="text-[#999]">Since 2018</p>
+                  <h3 className="text-2xl text-white font-semibold">
+                    GreenTech Enterprises
+                  </h3>
+                </div>
+                <div className="view_btn mx-auto md:mx-2 my-2 md:flex text-lg lg:text-sm h-[50px] w-[95%] lg:w-[150px] flex justify-center items-center text-center p-2 text-white cursor-pointer">
+                  Visit Website
+                </div>
+              </div>
+              <div className=" m-4 flex justify-between items-center">
+                <div>
+                  <div className="flex justify-start items-center gap-1">
+                    <img src={Menu} alt="" />
+                    <p className="text-[#999]">Domain</p>
+                  </div>
+                  <p className="text-white text-lg font-semibold">
+                    Commercial Real Estate
+                  </p>
+                </div>
+                <div className="border-l border-[#999] p-2">
+                  <div className="flex justify-start items-center gap-1">
+                    <RiFlashlightFill className="text-[#999]" />
+                    <p className="text-[#999]">Category</p>
+                  </div>
+                  <p className="text-white text-lg font-semibold">
+                    Retail Space Development
+                  </p>
+                </div>
+              </div>
+              <div className="Team w-5/6 lg:w-[450px] mx-auto mb-4">
+                <div className=" m-4 flex justify-start items-center gap-1">
+                  <p className="text-[#999]">What They Said</p>
+                  <BsEmojiSmileFill className="text-yellow-600" />
+                </div>
+                <p className="text-white py-4 px-4">
+                  Estatein's ability to identify prime retail locations helped
+                  us expand our brand presence. They are a trusted partner in
+                  our growth.
+                </p>
+              </div>
+            </div>
           </div>
+          <hr className="pb-2 pt-6" />
+          <div className="flex justify-between items-center pb-8">
+          <span className="text-white hidden lg:flex gap-1">
+            {" "}
+            01 <p className="text-[#999]"> of 10 </p>
+          </span>
+          <div className="flex justify-center items-center gap-2 cursor-pointer">
+            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center">
+              <FaArrowLeft />
+            </div>
+            <span className="text-white flex lg:hidden gap-1">
+              {" "}
+              01 <p className="text-[#999]"> of 10 </p>
+            </span>
+            <div className="w-[40px] h-[40px] text-white hover:bg-[#999] nextIcon flex justify-center items-center">
+              <FaArrowRight />
+            </div>
+          </div>
+          </div>
+          <Prefooter/>
         </div>
       </div>
     </div>
