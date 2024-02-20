@@ -48,7 +48,7 @@ const Navigation = () => {
         </div>
       </div>
       {toggle ? (
-        <div className="md:hidden fixed w-screen h-screen bg-advert bg-no-repeat  top-0 right-0 navBg duration-[950ms] z-20">
+        <div className="md:hidden fixed w-screen h-screen bg-advert bg-no-repeat top-0 right-0 navBg duration-[950ms] z-20">
            <div className="flex items-center justify-start gap-1 m-2">
             <img src={Logo} alt="" className="w-[40px]" />
             <p className="text-[#fff] font-Urbanist font-semibold text-3xl">
